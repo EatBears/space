@@ -32,6 +32,11 @@
 		} else {
 			speed = speed * 0.9;
 		}
+		if (speed < 0.01) { 
+			speed = 0.01;
+		} else if (speed > 0.1) { 
+			speed = 0.1;
+		}
 	})
 	
 	class Star {
